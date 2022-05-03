@@ -15,10 +15,8 @@ const View = () => {
 
   console.log("user", setUser);
 
-  // console.log("user", user);
 
   useEffect(() => {
-    // userInstance.get(`crud/${id}`).then((res) => console.log("hi", res.data));
     userInstance.get(`crud/${id}`).then((res) => setUser(res.data));
   }, []);
   console.log("user", user);

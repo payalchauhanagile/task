@@ -1,7 +1,6 @@
 import axios from "axios";
 import {
   formatError,
-  login,
   runLogoutTimer,
   saveTokenInLocalStorage,
   signUp,

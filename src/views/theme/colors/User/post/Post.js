@@ -4,7 +4,8 @@ import { Formik, Field, ErrorMessage } from "formik";
 import { useNavigate } from "react-router";
 import * as Yup from "yup";
 
-import { createUserAction } from "../../../../../store/actions/UserActions";
+// import { createUserAction } from "../../../store/actions/UserActions";
+import { createUserAction } from "src/store/actions/UserActions";
 import {
   Checkbox,
   Form,
@@ -44,8 +45,6 @@ const Post = (props) => {
 
     checkboxGroup: Yup.array().required("Required"),
   });
-
-  // const validateRequired = (value) => !value;
 
   const filesharhe_ref = useRef();
 

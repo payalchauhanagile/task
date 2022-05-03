@@ -16,7 +16,6 @@ export function deleteUserAction(userId, history) {
   return (dispatch, getState) => {
     deleteUser(userId).then((response) => {
       dispatch(confirmedDeleteUserAction(userId));
-      // history.push("/theme/post/read");
     });
   };
 }

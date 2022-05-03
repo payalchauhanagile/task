@@ -16,33 +16,9 @@ export default function Read(props) {
     await userInstance.get("crud").then((getData) => setApiData(getData.data));
   }, []);
 
-  // const setData = (
-  //   id,
-  //   textInput,
-  //   textarea,
-  //   radioGroup,
-  //   select,
-  //   checkboxGroup,
-  //   myfile
-  // ) => {
-  //   localStorage.setItem("ID", id);
-  //   localStorage.setItem("TEXTINPUT", textInput);
-  //   localStorage.setItem("TEXTAREA", textarea);
-  //   localStorage.setItem("RADIOGROUP", radioGroup);
-  //   localStorage.setItem("SELECT", select);
-  //   localStorage.setItem("CHECKBOXGROUP", checkboxGroup);
-  //   localStorage.setItem("MYFILE", myfile);
-  // };
-
-  // console.log("hello", setData);
-
-  const getData = () => {
-    setApiData(dispatch(getUsersAction()));
-  };
-
+  
   const onDelete = (id) => {
     dispatch(deleteUserAction(id, props.history));
-    // navigate("/theme/post/read");
   };
 
   return (
@@ -76,17 +52,7 @@ export default function Read(props) {
                   <Link to={`/theme/post/update/${data.id}`}>
                     <Button
                       color="green"
-                      // onClick={() =>
-                      //   setData(
-                      //     data.id,
-                      //     data.textInput,
-                      //     data.textarea,
-                      //     data.radioGroup,
-                      //     data.select,
-                      //     data.checkboxGroup,
-                      //     data.myfile
-                      //   )
-                      // }
+                      
                     >
                       Update
                     </Button>

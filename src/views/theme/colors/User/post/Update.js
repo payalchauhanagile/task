@@ -37,11 +37,9 @@ const Update = (props) => {
         select: res.data.select,
         radioGroup: res.data.radioGroup,
         checkboxGroup: res.data.checkboxGroup,
-        // myfile: res.data.myfile,
       })
     );
   }, [id]);
-  console.log(initialValues);
   const onInputChange = (e) => {
     setInitialValues({
       ...initialValues,
@@ -52,7 +50,6 @@ const Update = (props) => {
 
   const onSubmit = async (values) => {
     dispatch(updateUserAction({ ...values, id })).then((res) => {
-      console.log(res);
       navigate("/theme/post/read");
     });
   };
