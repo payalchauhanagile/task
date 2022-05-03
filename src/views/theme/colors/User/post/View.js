@@ -26,7 +26,7 @@ const View = () => {
     <Grid>
       <Paper style={paperStyle}>
         <Grid>
-          <h2>User Data </h2>
+          <h2>User Details </h2>
         </Grid>
         <ul>
           <li>id:{user.id}</li>
