@@ -6,7 +6,7 @@ const Update = React.lazy(() =>
   import("./views/theme/colors/User/post/Update")
 );
 const View = React.lazy(() => import("./views/theme/colors/User/post/View"));
-//fdf
+
 const routes = [
   { path: "/", exact: true, name: "Home" },
   { path: "/theme/post", name: "User", element: Post },
